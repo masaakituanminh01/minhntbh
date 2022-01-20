@@ -88,26 +88,14 @@
 			<p>You may like these new music</p>
 		</div>
 		<div class="product-group">
-			<?php ?> 
-			<?php
-			include('connect.php')
-			$sql = "SELECT * FROM music";
-			$result = mysqli_query($connect, $sql);
-			while($row_music = mysqli_fetch_array($result)){
-				$musicID = $row_music['musicID']
-				$musicName = $row_music['musicName']
-				$musicLyrics = $row_music['musicLyrics']
-				$musicImage = $row_music['musicImage']
-				$musicAudio = $row_music['musicAudio']
-			}  ?>
 			<div class="row">
 				<div class="col-md-3 col-sm-6 col-12">
 					<div class="card card-product mb-3">
-					  <img class="card-img-top" src="images\<?php $musicImage ?>" alt="Enemy Cover" ; style="height: 280px">
+					  <img class="card-img-top" src="https://flxt.tmsimg.com/assets/p20738393_b_v8_aa.jpg" alt="Enemy Cover" ; style="height: 280px">
 					  <div class="card-body">
 					    <h5 class="card-title">Enemy (Imagine Dragons x J.I.D)</h5>
 					    <audio controls controlsList = "nodownload" ontimeupdate="myAudio(this)" style="width: 230px;"> 
-					    	<source src="audio\<?php $musicAudio ?>" type="audio/mpeg">
+					    	<source src="audio\Enemy - Imagine Dragons_ JID.mp3" type="audio/mpeg">
 					    	</audio>
 					     <script type="text/javascript">
    								function myAudio(event){
@@ -123,11 +111,11 @@
 				</div>
 				<div class="col-md-3 col-sm-6 col-12">
 					<div class="card card-product mb-3">
-					  <img class="card-img-top" src="images\<?php $musicImage  ?>" alt="BIAD Cover">
+					  <img class="card-img-top" src="https://i1.sndcdn.com/artworks-gDpgyUw03Yui06E7-STtzMw-t500x500.jpg" alt="BIAD Cover">
 					  <div class="card-body">
 					    <h5 class="card-title">Burn It All Down (ft. PVRIS) </h5>
 					    <audio controls controlsList = "nodownload" ontimeupdate="myAudio(this)" style="width: 230px;"> 
-					    	<source src="audio\<?php $musicAudio ?>" type="audio/mpeg">
+					    	<source src="audio\Burn It All Down - League Of Legends_ PV.mp3" type="audio/mpeg">
 					    	</audio>
 					     <script type="text/javascript">
    								function myAudio(event){
@@ -143,11 +131,11 @@
 				</div>
 				<div class="col-md-3 col-sm-6 col-12">
 					<div class="card card-product mb-3">
-					  <img class="card-img-top" src="images\<?php $musicImage ?>" alt="More Cover">
+					  <img class="card-img-top" src="https://scontent-hkt1-2.xx.fbcdn.net/v/t1.6435-9/122831641_2871223783157126_8171289627567434611_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=8bfeb9&_nc_ohc=5s8swbJZZJwAX-i3D53&_nc_ht=scontent-hkt1-2.xx&oh=2aec3c7fb6d0c79455502cd268732e2f&oe=61B238F1" alt="More Cover">
 					  <div class="card-body">
 					    <h5 class="card-title">K/DA - More ft. Madison Beer, (G)I-DLE, Lexie Liu, Jaira Burns, Seraphine</h5>
 					    <audio controls controlsList = "nodownload" ontimeupdate="myAudio(this)" style="width: 230px;"> 
-					    	<source src="audio\<?php $musicAudio ?>" type="audio/mpeg">
+					    	<source src="audio\More - K_DA_ Madison Beer_ G_I-DLE_ Lexi.mp3" type="audio/mpeg">
 					    	</audio>
 					     <script type="text/javascript">
    								function myAudio(event){
@@ -163,11 +151,11 @@
 				</div>
 				<div class="col-md-3 col-sm-6 col-12">
 					<div class="card card-product mb-3">
-					  <img class="card-img-top" src="images\<?php $musicImage ?>" alt="Baddest Cover">
+					  <img class="card-img-top" src="https://i.pinimg.com/originals/64/b9/55/64b955033f60aff507050da51d202ce2.jpg" alt="Baddest Cover">
 					  <div class="card-body">
 					    <h5 class="card-title">K/DA - The Baddest ft. (G)I-DLE, Bea Miller, Wolftyla</h5>
 							<audio controls controlsList = "nodownload" ontimeupdate="myAudio(this)" style="width: 230px;"> 
-					    	<source src="audio\<?php $musicAudio ?>" type="audio/mpeg">
+					    	<source src="audio\The Baddest - K_DA_ G_I-DLE_ Wolftyla_ B.mp3" type="audio/mpeg">
 					    	</audio>
 					     <script type="text/javascript">
    								function myAudio(event){
@@ -183,11 +171,11 @@
 				</div>
 				<div class="col-md-3 col-sm-6 col-12">
 					<div class="card card-product mb-3">
-					  <img class="card-img-top" src="images\<?php $musicImage ?>" alt="Pop star cover">
+					  <img class="card-img-top" src="https://pics.filmaffinity.com/K_DA_POP_STARS_Music_Video-297078686-large.jpg" alt="Pop star cover">
 					  <div class="card-body">
 					    <h5 class="card-title">K/DA - Pop/Stars (ft. Madison Beer, (G)I-DLE, Jaira Burns)</h5>
 					    <audio controls controlsList = "nodownload" ontimeupdate="myAudio(this)" style="width: 230px;"> 
-					    	<source src="audio\<?php $musicAudio ?>" type="audio/mpeg">
+					    	<source src="audio\Pop_Stars - K_DA_ Madison Beer_ G_I-DLE_.mp3" type="audio/mpeg">
 					    	</audio>
 					     <script type="text/javascript">
    								function myAudio(event){
